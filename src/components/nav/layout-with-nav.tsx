@@ -9,7 +9,7 @@ export const LayoutWithNav = ({ children }: { children: ReactNode }) => {
     <>
       <NavProvider>
         <NavComponents />
-        <main className="relative flex min-h-screen w-full flex-col items-center bg-amber-950 bg-opacity-30 font-sans text-orange-950">
+        <main className="relative flex min-h-screen w-full flex-col items-center bg-black bg-opacity-70 font-sans text-amber-950">
           {children}
         </main>
       </NavProvider>

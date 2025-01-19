@@ -17,9 +17,10 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body
         className="h-screen bg-black bg-cover bg-fixed bg-center bg-no-repeat"
-        // style={{
-        //   backgroundImage: "url('../../../../assets/images/wood.jpg')",
-        // }}
+        style={{
+          backgroundImage:
+            "url('../../../../assets/images/barrels-background.avif')",
+        }}
       >
         <LayoutWithNav>{children}</LayoutWithNav>
       </body>

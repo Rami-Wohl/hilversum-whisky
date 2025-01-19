@@ -10,6 +10,7 @@ import BurgerMenuIcon from "../icons/burgermenu-icon";
 
 const routes = {
   welkom: "/",
+  over: "/over-ons",
 };
 
 const NavComponents = () => {
@@ -33,7 +34,7 @@ const NavComponents = () => {
     <div>
       <nav
         ref={mobileMenuRef}
-        className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-orange-100 text-left lg:bg-opacity-50 ${
+        className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-amber-50 text-left ${
           isMobileMenuVisible ? "translate-x-0" : "translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
@@ -41,6 +42,11 @@ const NavComponents = () => {
           <NavLink
             href={routes.welkom}
             title={"Welkom"}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.over}
+            title={"Over ons"}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <div className="border-b border-dotted border-amber-950" />

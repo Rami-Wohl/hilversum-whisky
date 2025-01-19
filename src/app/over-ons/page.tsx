@@ -7,7 +7,7 @@ import thomas from "../../../public/assets/images/thomas-hoofd.jpeg";
 
 export default function HomePage() {
   return (
-    <div className="flex h-screen w-screen flex-col items-center text-lg">
+    <div className="flex h-screen w-screen flex-col items-center text-base lg:text-lg">
       <ContentSection title="Over ons">
         <p>
           <b>Whiskey Club Hilversum</b> bestaat uit &apos;Lorem ipsum dolor sit,
@@ -16,28 +16,30 @@ export default function HomePage() {
           laboriosam vero error consequuntur nihil ducimus deleniti consequatur
           nam odit voluptatum delectus?&apos;
         </p>
-        <div className="flex flex-row items-start p-8">
-          <div className="w-60">
+        <div className="flex flex-col items-start p-8 lg:flex-row">
+          <div className="mb-8 flex w-full items-center justify-center lg:mb-0 lg:w-60">
             <CircularImage alt="Thomas's hoofd" src={thomas.src} size={200} />
           </div>
-          <div className="px-8 text-right">
-            <h1 className="py-2 text-2xl font-semibold">Thomas</h1>
+          <div className="text-center lg:px-8 lg:text-right">
+            <h1 className="pb-4 text-xl font-semibold lg:text-2xl">Thomas</h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aut
             dolores ut excepturi temporibus officiis, nulla quisquam in non
             corrupti error omnis corporis sapiente quam ducimus dignissimos
             animi odit quasi!{" "}
           </div>
         </div>
-        <div className="flex flex-row items-start p-8">
-          <div className="px-8 text-left">
-            <h1 className="py-2 text-2xl font-semibold">Rami</h1>
+        <div className="flex flex-col items-start p-8 lg:flex-row-reverse">
+          <div className="mb-8 flex w-full items-center justify-center lg:mb-0 lg:w-60">
+            <CircularImage alt="Rami's hoofd" src={rami.src} size={200} />
+          </div>
+          <div className="text-center lg:px-8 lg:text-left">
+            <h1 className="text-nowrap pb-4 text-xl font-semibold lg:text-2xl">
+              Rami
+            </h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aut
             dolores ut excepturi temporibus officiis, nulla quisquam in non
             corrupti error omnis corporis sapiente quam ducimus dignissimos
             animi odit quasi!{" "}
-          </div>
-          <div className="w-60">
-            <CircularImage alt="Rami's hoofd" src={rami.src} size={200} />
           </div>
         </div>
       </ContentSection>
